@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="CryptoGuard.MAUI.Views.SettingsPage"
+             Title="Ayarlar"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="24" BackgroundColor="{DynamicResource PageBackgroundColor}">
+            <!-- Profil ve Hesap Ayarları (Expander ile) -->
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Profil ve Hesap Ayarları" FontSize="20" FontAttributes="Bold" TextColor="{DynamicResource TextColor}"/>
+                </toolkit:Expander.Header>
+                <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="12" Padding="16">
+                    <VerticalStackLayout Spacing="16">
+                        <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                            <Frame WidthRequest="96" HeightRequest="96" CornerRadius="48" BorderColor="{DynamicResource AccentColor}" Padding="0" HasShadow="False" VerticalOptions="Center">
+                                <Image Source="{Binding ProfilePhoto}" Aspect="AspectFill" WidthRequest="96" HeightRequest="96"/>
+                            </Frame>
+                            <VerticalStackLayout Spacing="6" VerticalOptions="Center">
+                                <Button Text="Fotoğraf Yükle" Command="{Binding UploadProfilePhotoCommand}" FontSize="12" Padding="8,0"/>
+                                <Button Text="Fotoğrafı Sil" Command="{Binding DeleteProfilePhotoCommand}" FontSize="12" Padding="8,0"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Kullanıcı Adı" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Entry Text="{Binding Username}" WidthRequest="180"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="E-posta" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Entry Text="{Binding Email}" WidthRequest="180"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Şifre" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Entry Text="{Binding Password}" IsPassword="True" WidthRequest="180"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Biyografi" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Entry Text="{Binding Biography}" WidthRequest="220" MaxLength="120" Placeholder="Kendinizi kısaca tanıtın..."/>
+                        </HorizontalStackLayout>
+                        <Button Text="Bilgileri Kaydet" Command="{Binding SaveProfileCommand}" BackgroundColor="{DynamicResource AccentColor}" TextColor="White" CornerRadius="10"/>
+                        <Button Text="Oturumu Kapat" Command="{Binding LogoutCommand}" BackgroundColor="{DynamicResource DangerColor}" TextColor="White" CornerRadius="10"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </toolkit:Expander>
+
+            <!-- Temel Ayarlar (Expander ile) -->
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Temel Ayarlar" FontSize="20" FontAttributes="Bold" TextColor="{DynamicResource TextColor}"/>
+                </toolkit:Expander.Header>
+                <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="12" Padding="16">
+                    <VerticalStackLayout Spacing="12">
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Tema" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Picker ItemsSource="{Binding ThemeOptions}" SelectedItem="{Binding SelectedTheme}" WidthRequest="120"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Dil" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Picker ItemsSource="{Binding LanguageOptions}" SelectedItem="{Binding SelectedLanguage}" WidthRequest="120"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Fiyat Alarmı Bildirimi" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Switch IsToggled="{Binding PriceAlertNotification}"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Haber Bildirimi" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Switch IsToggled="{Binding NewsNotification}"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="Varsayılan Sayfa" TextColor="{DynamicResource SecondaryTextColor}"/>
+                            <Picker ItemsSource="{Binding DefaultPageOptions}" SelectedItem="{Binding SelectedDefaultPage}" WidthRequest="150"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+            </toolkit:Expander>
+
+            <!-- Portföy ve Coin Ayarları -->
+            <Label Text="Portföy ve Coin Ayarları" FontSize="20" FontAttributes="Bold" TextColor="{DynamicResource TextColor}"/>
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="12" Padding="16">
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Varsayılan Para Birimi" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Picker ItemsSource="{Binding CurrencyOptions}" SelectedItem="{Binding SelectedCurrency}" WidthRequest="120"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Favori Coinler" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Entry Text="{Binding FavoriteCoins}" Placeholder="BTC, ETH, SOL..." WidthRequest="180"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Portföy Sıralama" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Picker ItemsSource="{Binding PortfolioSortOptions}" SelectedItem="{Binding SelectedPortfolioSort}" WidthRequest="150"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Portföyü Herkese Açık Yap" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Switch IsToggled="{Binding IsPortfolioPublic}"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Sesli Komut ve Erişilebilirlik -->
+            <Label Text="Sesli Komut ve Erişilebilirlik" FontSize="20" FontAttributes="Bold" TextColor="{DynamicResource TextColor}"/>
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="12" Padding="16">
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Sesli Komut" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Switch IsToggled="{Binding VoiceCommandEnabled}"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Yazı Boyutu" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Picker ItemsSource="{Binding FontSizeOptions}" SelectedItem="{Binding SelectedFontSize}" WidthRequest="120"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Kontrast" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Switch IsToggled="{Binding HighContrastEnabled}"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="12">
+                    <Label Text="Sesli Okuma" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Switch IsToggled="{Binding VoiceReadEnabled}"/>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             x:Class="CryptoGuard.MAUI.Views.AddCoinPopup"
+             Title="Yeni Kripto Ekle">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Kripto Para Seçimi"/>
+        <Picker ItemsSource="{Binding Coins}" 
+                ItemDisplayBinding="{Binding Name}" 
+                SelectedItem="{Binding SelectedCoin}"/>
+        <Frame BackgroundColor="#222" Padding="10" CornerRadius="8" IsVisible="{Binding SelectedCoin, Converter={StaticResource NullToBoolConverter}}">
+            <VerticalStackLayout>
+                <Label Text="{Binding SelectedCoin.Name}" FontAttributes="Bold" FontSize="18"/>
+                <Label Text="{Binding SelectedCoin.Symbol, StringFormat='Sembol: {0}'}"/>
+                <Label Text="{Binding SelectedCoin.CurrentPrice, StringFormat='Güncel Fiyat: ₺{0:N2}'}"/>
+                <Label Text="{Binding SelectedCoin.MarketCap, StringFormat='Piyasa Değeri: ₺{0:N0}'}"/>
+                <Label Text="{Binding SelectedCoin.PriceChangePercentage24h, StringFormat='24s Değişim: {0:N2}%'}"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Label Text="Miktar"/>
+        <Entry Placeholder="Örn: 0.5" Keyboard="Numeric" Text="{Binding AmountText}"/>
+        <Label Text="Alış Fiyatı (₺)"/>
+        <Entry Placeholder="Örn: 100000" Keyboard="Numeric" Text="{Binding BuyPriceText}"/>
+        <Button Text="Ekle" Command="{Binding AddCommand}" IsEnabled="{Binding CanAdd}"/>
+        <Button Text="İptal" Command="{Binding CancelCommand}"/>
+    </VerticalStackLayout>
+</ContentPage> 

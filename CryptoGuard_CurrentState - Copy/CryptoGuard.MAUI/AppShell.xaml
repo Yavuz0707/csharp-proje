@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CryptoGuard.MAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CryptoGuard.MAUI.Views"
+    xmlns:views="clr-namespace:CryptoGuard.MAUI.Views"
+    Title="CryptoGuard.MAUI">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate local:RegisterPage}"
+        Route="RegisterPage" />
+
+    <ShellContent
+        Title="Forgot Password"
+        ContentTemplate="{DataTemplate local:ForgotPasswordPage}"
+        Route="ForgotPasswordPage" />
+
+    <ShellContent
+        Title="Reset Password"
+        ContentTemplate="{DataTemplate local:ResetPasswordPage}"
+        Route="ResetPasswordPage" />
+
+    <ShellContent
+        Title="Main"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Tüm Coinler"
+        ContentTemplate="{DataTemplate local:AllCoinsPage}"
+        Route="AllCoinsPage" />
+
+    <ShellContent
+        Title="Portföyüm"
+        ContentTemplate="{DataTemplate local:PortfolioPage}"
+        Route="PortfolioPage" />
+
+    <ShellContent
+        Title="Haberler"
+        ContentTemplate="{DataTemplate local:NewsPage}"
+        Route="NewsPage" />
+
+    <ShellContent
+        Title="Ayarlar"
+        ContentTemplate="{DataTemplate local:SettingsPage}"
+        Route="SettingsPage" />
+
+    <ShellContent
+        Title="Akış"
+        ContentTemplate="{DataTemplate views:FeedPage}"
+        Route="FeedPage" />
+
+    <TabBar>
+        <Tab Title="Ana Sayfa" Icon="home_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:FeedPage}" />
+        </Tab>
+        <Tab Title="Portföy" Icon="portfolio_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:PortfolioPage}" />
+        </Tab>
+        <Tab Title="Profilim" Icon="profile_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" Route="MyProfile" />
+        </Tab>
+        <Tab Title="Ayarlar" Icon="settings_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

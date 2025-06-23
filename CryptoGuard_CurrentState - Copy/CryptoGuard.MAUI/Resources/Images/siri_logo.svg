@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Dış daire -->
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#7c3aed" stroke-width="4" opacity="0.3"/>
+    
+    <!-- İç daire -->
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#7c3aed" stroke-width="4" opacity="0.5"/>
+    
+    <!-- Merkez daire -->
+    <circle cx="100" cy="100" r="50" fill="url(#gradient)" stroke="#7c3aed" stroke-width="2"/>
+    
+    <!-- Gradient tanımı -->
+    <defs>
+        <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8"/>
+            <stop offset="100%" style="stop-color:#4c1d95;stop-opacity:0.6"/>
+        </radialGradient>
+    </defs>
+    
+    <!-- Dalga animasyonu için path -->
+    <path d="M60,100 Q80,80 100,100 T140,100" fill="none" stroke="#7c3aed" stroke-width="3" opacity="0.8">
+        <animate attributeName="d" 
+                 values="M60,100 Q80,80 100,100 T140,100;
+                         M60,100 Q80,120 100,100 T140,100;
+                         M60,100 Q80,80 100,100 T140,100"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+    </path>
+</svg> 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             xmlns:conv="clr-namespace:CryptoGuard.MAUI.Converters"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="CryptoGuard.MAUI.Views.PortfolioPage"
+             Title="Portföy"
+             BackgroundColor="#181A20">
+    <ContentPage.Resources>
+        <conv:FavoriteIconConverter x:Key="FavoriteIconConverter" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout Padding="18,24,18,18" Spacing="28">
+            <!-- Top Balance Section -->
+            <Frame BackgroundColor="#232136" CornerRadius="22" Padding="24" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Toplam Bakiye" FontSize="18" TextColor="#b4befe"/>
+                    <Label Text="{Binding TotalBalanceDisplay}" FontSize="32" FontAttributes="Bold" TextColor="#fff"/>
+                    <Button Text="{Binding CurrencyButtonText}" Clicked="OnToggleCurrencyClicked" BackgroundColor="#313244" TextColor="#fff" CornerRadius="10" HeightRequest="32" WidthRequest="80" HorizontalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="12" Margin="0,10,0,0">
+                        <Button Text="Coin Ekle" BackgroundColor="#7c3aed" TextColor="#fff" FontAttributes="Bold" CornerRadius="12" Padding="18,0" HeightRequest="40" Clicked="OnAddCoinClicked"/>
+                        <Button Text="Rapor Al" BackgroundColor="#7c3aed" TextColor="#fff" FontAttributes="Bold" CornerRadius="12" Padding="18,0" HeightRequest="40" Clicked="OnGetReportClicked"/>
+                        <Button Text="İşlem Geçmişi" BackgroundColor="#7c3aed" TextColor="#fff" FontAttributes="Bold" CornerRadius="12" Padding="18,0" HeightRequest="40" Clicked="OnShowHistoryClicked"/>
+                        <Button Text="AI Asistan" BackgroundColor="#7c3aed" TextColor="#fff" FontAttributes="Bold" CornerRadius="12" Padding="18,0" HeightRequest="40" Clicked="OnAIAssistantClicked"/>
+                        <Button Text="Örnek İşlem Ekle" BackgroundColor="#7c3aed" TextColor="#fff" FontAttributes="Bold" CornerRadius="12" Padding="18,0" HeightRequest="40" Command="{Binding AddExampleTransactionsCommand}"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Portfolio Coin List Section -->
+            <Frame BackgroundColor="#232136" CornerRadius="22" Padding="18" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Portföyüm" FontSize="18" TextColor="#b4befe"/>
+                    <CollectionView x:Name="portfolioCollectionView" ItemsSource="{Binding PortfolioItems}" HeightRequest="220">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="#232136" CornerRadius="14" Padding="12" HasShadow="False" Margin="0,0,0,8">
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding CoinName}" FontSize="16" TextColor="#fff" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Quantity, StringFormat='Miktar: {0:N4}'}" FontSize="14" TextColor="#b4befe"/>
+                                        <Label Text="{Binding BuyPrice, StringFormat='Alış: {0:N4}'}" FontSize="14" TextColor="#b4befe"/>
+                                        <Label Text="{Binding CurrentPrice, StringFormat='Güncel: {0:N4}'}" FontSize="14" TextColor="#7cfa7c"/>
+                                        <Label Text="{Binding CurrentValue, StringFormat='Değer: {0:N2}'}" FontSize="14" TextColor="#f9d923"/>
+                                        <HorizontalStackLayout Spacing="8" Margin="0,8,0,0">
+                                            <Button Text="Düzenle" Command="{Binding BindingContext.EditCoinCommand, Source={x:Reference portfolioCollectionView}}" CommandParameter="{Binding .}" BackgroundColor="#7c3aed" TextColor="White" CornerRadius="8" />
+                                            <Button Text="Sil" Command="{Binding BindingContext.DeleteCoinCommand, Source={x:Reference portfolioCollectionView}}" CommandParameter="{Binding .}" BackgroundColor="#f38ba8" TextColor="White" CornerRadius="8" />
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Pie Chart Section: Portföy Dağılımı -->
+            <Frame BackgroundColor="#232136" CornerRadius="22" Padding="18" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Portföy Dağılımı" FontSize="18" TextColor="#b4befe"/>
+                    <lvc:PieChart x:Name="pieChart" Series="{Binding PieSeries}" LegendPosition="Right" HeightRequest="220" />
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Statistics Section -->
+            <Frame BackgroundColor="#232136" CornerRadius="22" Padding="18" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <HorizontalStackLayout Spacing="18" VerticalOptions="Center">
+                        <Label Text="İstatistikler" FontSize="18" TextColor="#b4befe"/>
+                        <Picker Title="Para Birimi" ItemsSource="{Binding CurrencyOptions}" SelectedItem="{Binding SelectedCurrency}" WidthRequest="80"/>
+                        <Picker Title="Dönem" ItemsSource="{Binding PeriodOptions}" SelectedItem="{Binding SelectedPeriod}" WidthRequest="80"/>
+                        <Picker Title="Seçenek" ItemsSource="{Binding ChartTypeOptions}" SelectedItem="{Binding SelectedChartType}" WidthRequest="80"/>
+                    </HorizontalStackLayout>
+                    <lvc:CartesianChart x:Name="portfolioChart" Series="{Binding LineSeries}" HeightRequest="320" XAxes="{Binding MainChartAxes}" YAxes="{Binding MainChartYAxes}" VerticalOptions="FillAndExpand" TooltipPosition="Top" />
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

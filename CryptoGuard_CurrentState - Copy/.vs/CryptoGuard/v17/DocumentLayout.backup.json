@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.maui\\cryptoguard.maui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|solutionrelative:cryptoguard.maui\\cryptoguard.maui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.maui\\viewmodels\\feedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|solutionrelative:cryptoguard.maui\\viewmodels\\feedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.maui\\viewmodels\\allcoinsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F7F15F4-CED8-42C5-90A5-785E386D0AF6}|CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj|solutionrelative:cryptoguard.maui\\viewmodels\\allcoinsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90A56D9C-832A-4EF2-A0B2-50DBA3E73B65}|CryptoGuard.Core\\CryptoGuard.Core.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.core\\models\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90A56D9C-832A-4EF2-A0B2-50DBA3E73B65}|CryptoGuard.Core\\CryptoGuard.Core.csproj|solutionrelative:cryptoguard.core\\models\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FFA4D3-3940-4ECA-92F7-07F174F4CC26}|CryptoGuard.Services\\CryptoGuard.Services.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.services\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FFA4D3-3940-4ECA-92F7-07F174F4CC26}|CryptoGuard.Services\\CryptoGuard.Services.csproj|solutionrelative:cryptoguard.services\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF43300-AC72-4C30-91D9-5DD119F09513}|CryptoGuard.Infrastructure\\CryptoGuard.Infrastructure.csproj|c:\\users\\sukru\\onedrive\\desktop\\di\u011Fer\\proje\\cryptoguard_currentstate\\cryptoguard.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF43300-AC72-4C30-91D9-5DD119F09513}|CryptoGuard.Infrastructure\\CryptoGuard.Infrastructure.csproj|solutionrelative:cryptoguard.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeedViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\ViewModels\\FeedViewModel.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.MAUI\\ViewModels\\FeedViewModel.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\ViewModels\\FeedViewModel.cs",
+              "RelativeToolTip": "CryptoGuard.MAUI\\ViewModels\\FeedViewModel.cs",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAwwDUBAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T02:20:27.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "CryptoGuard.MAUI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAEwD4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:41:36.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Core\\Models\\Coin.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.Core\\Models\\Coin.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Core\\Models\\Coin.cs",
+              "RelativeToolTip": "CryptoGuard.Core\\Models\\Coin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:10:59.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AllCoinsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\ViewModels\\AllCoinsViewModel.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.MAUI\\ViewModels\\AllCoinsViewModel.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\ViewModels\\AllCoinsViewModel.cs",
+              "RelativeToolTip": "CryptoGuard.MAUI\\ViewModels\\AllCoinsViewModel.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAvwF0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:10:55.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CryptoGuard.MAUI",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj",
+              "RelativeDocumentMoniker": "CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj",
+              "RelativeToolTip": "CryptoGuard.MAUI\\CryptoGuard.MAUI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-10T20:04:19.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PortfolioService.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Services\\Services\\PortfolioService.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.Services\\Services\\PortfolioService.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Services\\Services\\PortfolioService.cs",
+              "RelativeToolTip": "CryptoGuard.Services\\Services\\PortfolioService.cs",
+              "ViewState": "AgIAAIYBAAAAAAAAAAAhwJwBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T19:24:23.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CryptoGuard.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\sukru\\OneDrive\\Desktop\\di\u011Fer\\proje\\CryptoGuard_CurrentState\\CryptoGuard.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CryptoGuard.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T19:55:18.956Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

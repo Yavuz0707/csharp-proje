@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoGuard.MAUI.Views.TrendsPage"
+             Title="Gündemdekiler"
+             BackgroundColor="#181825">
+    <ScrollView>
+        <VerticalStackLayout Padding="0,16,0,0" Spacing="0">
+            <Label Text="Gündemdekiler" FontSize="28" FontAttributes="Bold" TextColor="#a78bfa" Margin="24,0,0,24"/>
+            <CollectionView x:Name="trendsCollectionView" ItemsSource="{Binding TrendingHashtags}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#232136" CornerRadius="18" Padding="18,12" Margin="16,0,16,18" HasShadow="True">
+                            <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                                <Label Text="{Binding Hashtag}" FontSize="20" FontAttributes="Bold" TextColor="#cdd6f4"/>
+                                <Label Text="{Binding Count, StringFormat='{0} gönderi'}" FontSize="15" TextColor="#a6adc8" Grid.Column="1" HorizontalOptions="End"/>
+                            </Grid>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.HashtagSelectedCommand, Source={x:Reference trendsCollectionView}}" CommandParameter="{Binding Hashtag}"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

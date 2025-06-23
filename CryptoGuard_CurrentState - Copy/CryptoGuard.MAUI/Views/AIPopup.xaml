@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="CryptoGuard.MAUI.Views.AIPopup"
+    Size="420,340">
+    <Frame BackgroundColor="#181A20"
+           CornerRadius="22"
+           Padding="0"
+           HasShadow="True"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+        <VerticalStackLayout Spacing="24" Padding="28,28,28,20">
+            <Label x:Name="TitleLabel"
+                   Text="CryptoGuardAI"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#fff"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,8"/>
+            <ScrollView HeightRequest="140">
+                <Label x:Name="AnswerLabel"
+                       Text="Yanıt yükleniyor..."
+                       FontSize="17"
+                       TextColor="#cdd6f4"
+                       LineBreakMode="WordWrap"
+                       HorizontalTextAlignment="Start"
+                       LineHeight="1.35"
+                       Margin="0,0,0,8"/>
+            </ScrollView>
+            <Button Text="Kapat"
+                    Clicked="OnCloseClicked"
+                    BackgroundColor="#7c3aed"
+                    TextColor="#fff"
+                    FontAttributes="Bold"
+                    FontSize="17"
+                    CornerRadius="18"
+                    Padding="0,14"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,8,0,0"/>
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup> 

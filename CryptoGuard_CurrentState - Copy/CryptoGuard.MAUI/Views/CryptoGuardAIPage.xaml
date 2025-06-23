@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             x:Class="CryptoGuard.MAUI.Views.CryptoGuardAIPage"
+             Title="CryptoGuard AI Asistan">
+
+    <Grid RowDefinitions="Auto,*,Auto" Padding="20">
+        <Label Text="CryptoGuard AI Asistan"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="15">
+                <Frame BackgroundColor="#232136" CornerRadius="10" Padding="15">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Portföy Analizi"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Button Text="Portföyümün performansını analiz et"
+                                Command="{Binding AnalyzePortfolioCommand}"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                        <Button Text="Portföyüm için öneriler al"
+                                Command="{Binding GetPortfolioRecommendationsCommand}"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#232136" CornerRadius="10" Padding="15">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Coin Analizi"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Button Text="Bitcoin'in gelecekteki fiyatını ne etkileyebilir?"
+                                Command="{Binding AskAIFuturePriceCommand}"
+                                CommandParameter="bitcoin"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                        <Button Text="Ethereum'un gelecekteki fiyatını ne etkileyebilir?"
+                                Command="{Binding AskAIFuturePriceCommand}"
+                                CommandParameter="ethereum"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#232136" CornerRadius="10" Padding="15">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Piyasa Analizi"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Button Text="Kripto piyasasının genel durumu nedir?"
+                                Command="{Binding AskAIMarketAnalysisCommand}"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                        <Button Text="En iyi performans gösteren coinler hangileri?"
+                                Command="{Binding AskAITopPerformersCommand}"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#232136" CornerRadius="10" Padding="15">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Özel Soru"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Entry Placeholder="Sorunuzu yazın..."
+                               Text="{Binding CustomQuestion}"
+                               TextColor="White"
+                               PlaceholderColor="Gray"/>
+                        <Button Text="Sor"
+                                Command="{Binding AskCustomQuestionCommand}"
+                                BackgroundColor="#7c3aed"
+                                TextColor="White"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <ActivityIndicator Grid.Row="2"
+                          IsRunning="{Binding IsBusy}"
+                          IsVisible="{Binding IsBusy}"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"/>
+    </Grid>
+</ContentPage> 

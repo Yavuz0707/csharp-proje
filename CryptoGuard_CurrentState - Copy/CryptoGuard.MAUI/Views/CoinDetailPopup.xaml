@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="CryptoGuard.MAUI.Views.CoinDetailPopup"
+             BackgroundColor="#181A20"
+             Title="Coin Detay">
+    <ScrollView>
+        <Grid ColumnDefinitions="300,*" RowDefinitions="*">
+            <!-- Sol Panel: Coin Bilgileri -->
+            <StackLayout Grid.Column="0" Padding="20" Spacing="18" BackgroundColor="#181A20">
+                <!-- Coin Header -->
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Start">
+                    <Image Source="{Binding CoinIcon}" WidthRequest="32" HeightRequest="32" />
+                    <Label Text="{Binding CoinName}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    <Label Text="{Binding CoinSymbol}" FontSize="16" TextColor="#b8b8ff" />
+                </HorizontalStackLayout>
+                <Label Text="{Binding CurrentPrice, StringFormat='$ {0:N2}'}" FontSize="28" FontAttributes="Bold" TextColor="White" />
+                <Label Text="{Binding ChangePercent, StringFormat='+{0:F2}%'}" FontSize="16" TextColor="#16c784" />
+                <!-- Market Stats -->
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" Padding="0,10,0,0">
+                    <Label Text="Market cap" TextColor="#a6adc8" />
+                    <Label Text="{Binding MarketCap}" Grid.Column="1" TextColor="White" />
+                    <Label Text="Volume (24h)" Grid.Row="1" TextColor="#a6adc8" />
+                    <Label Text="{Binding Volume24h}" Grid.Column="1" Grid.Row="1" TextColor="White" />
+                    <Label Text="Total supply" Grid.Row="2" TextColor="#a6adc8" />
+                    <Label Text="{Binding TotalSupply}" Grid.Column="1" Grid.Row="2" TextColor="White" />
+                    <Label Text="Max supply" Grid.Row="3" TextColor="#a6adc8" />
+                    <Label Text="{Binding MaxSupply}" Grid.Column="1" Grid.Row="3" TextColor="White" />
+                </Grid>
+                <!-- Links -->
+                <HorizontalStackLayout Spacing="10" Padding="0,10,0,0">
+                    <Button Text="Website" Command="{Binding OpenWebsiteCommand}" />
+                    <Button Text="Whitepaper" Command="{Binding OpenWhitepaperCommand}" />
+                </HorizontalStackLayout>
+                <!-- Converter -->
+                <Frame BackgroundColor="#232136" CornerRadius="10" Padding="10" Margin="0,10,0,0">
+                    <HorizontalStackLayout Spacing="8">
+                        <Label Text="{Binding ConverterSymbol}" TextColor="#b8b8ff" />
+                        <Entry Text="{Binding ConverterBTC}" WidthRequest="60" Keyboard="Numeric" />
+                        <Label Text="=" TextColor="#b8b8ff" />
+                        <Label Text="USD" TextColor="#b8b8ff" />
+                        <Entry Text="{Binding ConverterUSD}" WidthRequest="100" Keyboard="Numeric" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <!-- Price Performance -->
+                <StackLayout Padding="0,10,0,0">
+                    <Label Text="Price performance (24h)" FontSize="12" TextColor="#a6adc8" />
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="{Binding Low24hDisplay}" FontSize="12" TextColor="#a6e3a1" />
+                        <Label Text="{Binding High24hDisplay}" FontSize="12" TextColor="#f9e2af" />
+                        <Label Text="{Binding PriceChange24hDisplay}" FontSize="12" />
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Sağ Panel: Grafik ve Marketler -->
+            <ScrollView Grid.Column="1">
+                <StackLayout Padding="20" Spacing="18">
+                    <!-- Tab Menüsü -->
+                    <HorizontalStackLayout Spacing="24">
+                        <Label Text="Chart" FontAttributes="Bold" TextColor="#7c3aed" />
+                        <Label Text="Markets" TextColor="#a6adc8" />
+                        <Label Text="News" TextColor="#a6adc8" />
+                        <Label Text="Yield" TextColor="#a6adc8" />
+                        <Label Text="Analytics" TextColor="#a6adc8" />
+                        <Label Text="About" TextColor="#a6adc8" />
+                    </HorizontalStackLayout>
+                    <!-- Grafik Alanı -->
+                    <Frame BackgroundColor="#232136" CornerRadius="16" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="30-Day Price Chart" FontSize="14" TextColor="#a6adc8" HorizontalOptions="Center" />
+                            <lvc:CartesianChart Series="{Binding Series}" HeightRequest="220" YAxes="{Binding YAxes}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                    <!-- AI Kartları (örnek) kaldırılıyor ve yerine butonlar ekleniyor -->
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Button Text="{Binding FuturePriceButtonText}" Command="{Binding AskAIFuturePriceCommand}" Style="{StaticResource ModernButtonStyle}" />
+                        <Button Text="{Binding SentimentButtonText}" Command="{Binding AskAISentimentCommand}" Style="{StaticResource ModernButtonStyle}" />
+                        <Button Text="{Binding Random1ButtonText}" Command="{Binding AskAIRandom1Command}" Style="{StaticResource ModernButtonStyle}" />
+                        <Button Text="{Binding Random2ButtonText}" Command="{Binding AskAIRandom2Command}" Style="{StaticResource ModernButtonStyle}" />
+                    </HorizontalStackLayout>
+                    <!-- Markets Tablosu -->
+                    <Frame BackgroundColor="#232136" CornerRadius="16" Padding="10">
+                        <CollectionView ItemsSource="{Binding Markets}">
+                            <CollectionView.Header>
+                                <Grid ColumnDefinitions="*,*,*,*,*,*" Padding="0,0,0,8">
+                                    <Label Text="#" TextColor="#a6adc8" />
+                                    <Label Text="Exchange" Grid.Column="1" TextColor="#a6adc8" />
+                                    <Label Text="Pair" Grid.Column="2" TextColor="#a6adc8" />
+                                    <Label Text="Price" Grid.Column="3" TextColor="#a6adc8" />
+                                    <Label Text="Volume (24h)" Grid.Column="4" TextColor="#a6adc8" />
+                                    <Label Text="Confidence" Grid.Column="5" TextColor="#a6adc8" />
+                                </Grid>
+                            </CollectionView.Header>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*,*,*,*,*,*" Padding="0,4">
+                                        <Label Text="{Binding Index}" />
+                                        <HorizontalStackLayout Grid.Column="1" Spacing="6" VerticalOptions="Center">
+                                            <Image Source="{Binding LogoUrl}" WidthRequest="20" HeightRequest="20" />
+                                            <Label Text="{Binding Exchange}" />
+                                        </HorizontalStackLayout>
+                                        <Label Text="{Binding Pair}" Grid.Column="2" />
+                                        <Label Text="{Binding Price, StringFormat='$ {0:N2}'}" Grid.Column="3" />
+                                        <Label Text="{Binding Volume24h}" Grid.Column="4" />
+                                        <Label Text="{Binding Confidence}" Grid.Column="5" />
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </Frame>
+                    <!-- Kapat Butonu -->
+                    <Button Text="Kapat" Command="{Binding CloseCommand}" BackgroundColor="#7c3aed" TextColor="White" CornerRadius="10" />
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ScrollView>
+</ContentPage> 

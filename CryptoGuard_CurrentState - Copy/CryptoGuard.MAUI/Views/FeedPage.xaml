@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoGuard.MAUI.Views.FeedPage"
+             Title="Home"
+             BackgroundColor="#16181c">
+    <ContentPage.Resources>
+        <Style x:Key="CircleImageStyle" TargetType="Image">
+            <Setter Property="Clip">
+                <Setter.Value>
+                    <EllipseGeometry Center="22,22" RadiusX="22" RadiusY="22" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <!-- Üst Bar: Kullanıcı arama kutusu -->
+        <Grid Grid.Row="0" ColumnDefinitions="*,200" Padding="0,8,0,8">
+            <Label Text="Home" FontSize="28" FontAttributes="Bold" TextColor="#a78bfa" VerticalOptions="Center" Margin="18,0,0,0"/>
+            <Entry Grid.Column="1" Placeholder="Kullanıcı ara..." Text="{Binding UserSearchText}" FontSize="16" BackgroundColor="#232136" TextColor="#cdd6f4" PlaceholderColor="#a6adc8" VerticalOptions="Center" Margin="0,0,18,0" TextChanged="OnUserSearchTextChanged"/>
+        </Grid>
+        <!-- Gönderi Kutusu -->
+        <Frame Grid.Row="1" BackgroundColor="#22242a" CornerRadius="0" Padding="18,16" HasShadow="False" Margin="0,0,0,0" BorderColor="#23272f">
+            <Grid ColumnDefinitions="56,*,auto" RowDefinitions="Auto">
+                <Image Grid.Row="0" Grid.Column="0" Source="{Binding CurrentUserProfilePhoto}" WidthRequest="44" HeightRequest="44" Aspect="AspectFill" Style="{StaticResource CircleImageStyle}"/>
+                <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="8">
+                    <Editor x:Name="PostEditor" Placeholder="What's happening?" Text="{Binding NewPostContent}" AutoSize="TextChanges" BackgroundColor="Transparent" FontSize="17" TextColor="#e7e9ea"/>
+                    <Image Source="{Binding NewPostImagePath}" HeightRequest="80" WidthRequest="80" Aspect="AspectFill" IsVisible="{Binding NewPostImagePath, Converter={StaticResource NullToBoolConverter}}" Margin="0,4,0,0"/>
+                    <HorizontalStackLayout Spacing="18" Margin="0,0,0,0">
+                        <ImageButton Source="image_icon.png" Command="{Binding SelectImageCommand}" BackgroundColor="Transparent" WidthRequest="3" HeightRequest="3"/>
+                        <ImageButton Source="emoji_icon.png" Command="{Binding ShowEmojiPickerCommand}" BackgroundColor="Transparent" WidthRequest="3" HeightRequest="3"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+                <Button Grid.Row="0" Grid.Column="2" Text="Post" Command="{Binding SharePostCommand}" FontSize="16" CornerRadius="20" Padding="18,4" BackgroundColor="#1d9bf0" TextColor="White" VerticalOptions="Start"/>
+            </Grid>
+        </Frame>
+        <!-- İnce Çizgi -->
+        <BoxView Grid.Row="2" HeightRequest="1" Color="#23272f"/>
+        <!-- Gönderi Listesi -->
+        <RefreshView Grid.Row="3" Command="{Binding LoadFeedCommand}">
+            <CollectionView x:Name="feedCollectionView"
+                          ItemsSource="{Binding FeedPosts}"
+                          SelectionMode="None"
+                          Margin="0,0,0,0"
+                          VerticalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#232136" CornerRadius="16" Padding="12" Margin="0,8,0,0" HasShadow="False">
+                            <Grid ColumnDefinitions="48,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+                                <!-- Profil Fotoğrafı -->
+                                <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Source="{Binding User.ProfilePhoto}" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" VerticalOptions="Start" Margin="0,0,10,0"/>
+                                <!-- Kullanıcı adı ve tarih -->
+                                <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="8">
+                                    <Label Text="{Binding User.Username}" FontAttributes="Bold" TextColor="#a78bfa" FontSize="16"/>
+                                    <Label Text="{Binding CreatedAt, StringFormat='· {0:dd.MM.yyyy HH:mm}'}" FontSize="13" TextColor="#a6adc8"/>
+                                </HorizontalStackLayout>
+                                <!-- Sağ üstte üç nokta menüsü -->
+                                <ImageButton Source="menu_icon.png"
+                                             WidthRequest="28" HeightRequest="28"
+                                             BackgroundColor="Transparent"
+                                             Padding="0"
+                                             IsVisible="{Binding IsMine}"
+                                             Clicked="OnFeedPostMenuClicked"
+                                             CommandParameter="{Binding .}"
+                                             Grid.Row="0" Grid.Column="1"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Start"/>
+                                <!-- İçerik -->
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Content}" TextColor="#e7e9ea" FontSize="15" Margin="0,2,0,0"/>
+                                <!-- Gönderi Resmi (varsa) -->
+                                <Image Grid.Row="2" Grid.Column="1" Source="{Binding ImagePath}" HeightRequest="180" Aspect="AspectFill" Margin="0,6,0,0" IsVisible="{Binding ImagePath, Converter={StaticResource NullToBoolConverter}}"/>
+                                <!-- Quoted Post (varsa) -->
+                                <Frame Grid.Row="3" Grid.Column="1" Margin="0,6,0,0" Padding="6,4" CornerRadius="10" BackgroundColor="#232136" BorderColor="#393950" HasShadow="False" IsVisible="{Binding OriginalPost, Converter={StaticResource NullToBoolConverter}}">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.OpenOriginalPostCommand, Source={x:Reference feedCollectionView}}"
+                                                              CommandParameter="{Binding OriginalPost.Id}" />
+                                    </Frame.GestureRecognizers>
+                                    <Grid ColumnDefinitions="28,*" RowDefinitions="Auto,Auto,Auto">
+                                        <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Source="{Binding OriginalPost.User.ProfilePhoto}" WidthRequest="22" HeightRequest="22" Aspect="AspectFill" VerticalOptions="Start" Margin="0,0,6,0"/>
+                                        <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="5" VerticalOptions="Start">
+                                            <Label Text="{Binding OriginalPost.User.Username}" FontAttributes="Bold" FontSize="13" TextColor="#a6adc8"/>
+                                            <Label Text="{Binding OriginalPost.CreatedAt, StringFormat='· {0:dd.MM.yyyy HH:mm}'}" FontSize="11" TextColor="#a6adc8"/>
+                                        </HorizontalStackLayout>
+                                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding OriginalPost.Content}" FontSize="13" TextColor="#e7e9ea" Margin="0,1,0,0"/>
+                                        <Image Grid.Row="2" Grid.Column="1" Source="{Binding OriginalPost.ImagePath}" HeightRequest="60" Aspect="AspectFill" Margin="0,3,0,0" IsVisible="{Binding OriginalPost.ImagePath, Converter={StaticResource NullToBoolConverter}}"/>
+                                    </Grid>
+                                </Frame>
+                                <!-- Silinmiş quoted post uyarısı -->
+                                <Frame Grid.Row="3" Grid.Column="1" Margin="0,6,0,0" Padding="6,4" CornerRadius="10" BackgroundColor="#232136" BorderColor="#393950" HasShadow="False">
+                                    <Frame.IsVisible>
+                                        <MultiBinding Converter="{StaticResource NotNullAndOriginalPostNullConverter}">
+                                            <Binding Path="OriginalPostId"/>
+                                            <Binding Path="OriginalPost"/>
+                                        </MultiBinding>
+                                    </Frame.IsVisible>
+                                    <Label Text="Bu gönderiye ulaşılamıyor." FontSize="13" TextColor="#71767b" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Frame>
+                                <!-- Alt ikon barı -->
+                                <HorizontalStackLayout Grid.Row="4" Grid.Column="1" Spacing="28" Margin="0,8,0,0" VerticalOptions="Start">
+                                    <HorizontalStackLayout Spacing="3">
+                                        <ImageButton Source="comment_icon.png" BackgroundColor="Transparent" WidthRequest="22" HeightRequest="22" Command="{Binding BindingContext.CommentCommand, Source={x:Reference feedCollectionView}}" CommandParameter="{Binding .}"/>
+                                        <Label Text="{Binding CommentCount}" FontSize="13" TextColor="#71767b" VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout Spacing="3">
+                                        <ImageButton Source="retweet_icon.png" BackgroundColor="Transparent" WidthRequest="22" HeightRequest="22" Command="{Binding BindingContext.RetweetCommand, Source={x:Reference feedCollectionView}}" CommandParameter="{Binding .}"/>
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout Spacing="3">
+                                        <ImageButton Source="{Binding IsLikedByMe, Converter={StaticResource LikeIconConverter}}" BackgroundColor="Transparent" WidthRequest="22" HeightRequest="22" Command="{Binding BindingContext.LikeCommand, Source={x:Reference feedCollectionView}}" CommandParameter="{Binding .}"/>
+                                        <Label Text="{Binding LikeCount}" FontSize="13" TextColor="#71767b" VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+</ContentPage> 

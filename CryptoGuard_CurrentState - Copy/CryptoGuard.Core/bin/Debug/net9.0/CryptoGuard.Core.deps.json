@@ -1,0 +1,679 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CryptoGuard.Core/1.0.0": {
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "LiveChartsCore.SkiaSharpView.Maui": "2.0.0-rc5.4"
+        },
+        "runtime": {
+          "CryptoGuard.Core.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.1"
+          }
+        }
+      },
+      "HarfBuzzSharp/8.3.0.1": {
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "8.3.0.1",
+          "HarfBuzzSharp.NativeAssets.macOS": "8.3.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/HarfBuzzSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.3.0.1"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/8.3.0.1": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/8.3.0.1": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "LiveChartsCore/2.0.0-rc5.4": {
+        "runtime": {
+          "lib/net8.0/LiveChartsCore.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "LiveChartsCore.Behaviours/2.0.0-rc5.4": {
+        "dependencies": {
+          "LiveChartsCore": "2.0.0-rc5.4"
+        },
+        "runtime": {
+          "lib/net8.0/LiveChartsCore.Behaviours.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "LiveChartsCore.SkiaSharpView/2.0.0-rc5.4": {
+        "dependencies": {
+          "LiveChartsCore": "2.0.0-rc5.4",
+          "SkiaSharp": "3.116.1",
+          "SkiaSharp.HarfBuzz": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/LiveChartsCore.SkiaSharpView.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "LiveChartsCore.SkiaSharpView.Maui/2.0.0-rc5.4": {
+        "dependencies": {
+          "LiveChartsCore": "2.0.0-rc5.4",
+          "LiveChartsCore.Behaviours": "2.0.0-rc5.4",
+          "LiveChartsCore.SkiaSharpView": "2.0.0-rc5.4",
+          "Microsoft.Maui.Controls": "8.0.82",
+          "SkiaSharp.HarfBuzz": "3.116.1",
+          "SkiaSharp.Views.Maui.Controls": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/LiveChartsCore.SkiaSharpView.Maui.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Maui.Controls/8.0.82": {
+        "dependencies": {
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.82",
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Controls.Xaml": "8.0.82",
+          "Microsoft.Maui.Resizetizer": "8.0.82"
+        }
+      },
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.82": {
+        "dependencies": {
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Controls.Xaml": "8.0.82"
+        }
+      },
+      "Microsoft.Maui.Controls.Core/8.0.82": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Maui.Core": "8.0.82"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Maui.Controls.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.0.8224.42604"
+          }
+        },
+        "resources": {
+          "lib/net8.0/ar/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/net8.0/ca/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/net8.0/cs/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/da/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "da"
+          },
+          "lib/net8.0/de/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/el/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "el"
+          },
+          "lib/net8.0/es/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fi/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/net8.0/fr/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/he/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "he"
+          },
+          "lib/net8.0/hi/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/net8.0/hr/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/net8.0/hu/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net8.0/id/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "id"
+          },
+          "lib/net8.0/it/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/ms/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/net8.0/nb/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/net8.0/nl/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/net8.0/pl/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/pt/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net8.0/ro/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net8.0/ru/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/sk/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net8.0/sv/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net8.0/th/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "th"
+          },
+          "lib/net8.0/tr/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/uk/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/net8.0/vi/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/net8.0/zh-HK/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.Maui.Controls.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Maui.Controls.Xaml/8.0.82": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Core": "8.0.82"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Maui.Controls.Xaml.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.0.8224.42604"
+          }
+        }
+      },
+      "Microsoft.Maui.Core/8.0.82": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Maui.Essentials": "8.0.82",
+          "Microsoft.Maui.Graphics": "8.0.82"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.0.8224.42604"
+          }
+        }
+      },
+      "Microsoft.Maui.Essentials/8.0.82": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "8.0.82"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Maui.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.0.8224.42604"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics/8.0.82": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Maui.Graphics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "8.0.8224.42604"
+          }
+        }
+      },
+      "Microsoft.Maui.Resizetizer/8.0.82": {},
+      "SkiaSharp/3.116.1": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.116.1",
+          "SkiaSharp.NativeAssets.macOS": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "assemblyVersion": "3.116.0.0",
+            "fileVersion": "3.116.1.0"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/3.116.1": {
+        "dependencies": {
+          "HarfBuzzSharp": "8.3.0.1",
+          "SkiaSharp": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.HarfBuzz.dll": {
+            "assemblyVersion": "3.116.0.0",
+            "fileVersion": "3.116.1.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.116.1": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.116.1": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Maui.Controls/3.116.1": {
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.82",
+          "Microsoft.Maui.Core": "8.0.82",
+          "SkiaSharp": "3.116.1",
+          "SkiaSharp.Views.Maui.Core": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.Views.Maui.Controls.dll": {
+            "assemblyVersion": "3.116.0.0",
+            "fileVersion": "3.116.1.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Maui.Core/3.116.1": {
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.82",
+          "SkiaSharp": "3.116.1"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.Views.Maui.Core.dll": {
+            "assemblyVersion": "3.116.0.0",
+            "fileVersion": "3.116.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CryptoGuard.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+    },
+    "HarfBuzzSharp/8.3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rwLpl+W6uqu0DuvzqNhTMuFcXfy1Vc0uq0YXgPEmtTSfeUSAye1FcARrm2YIPOSiCBwBOGu3cLvMX5Fp6OKe2g==",
+      "path": "harfbuzzsharp/8.3.0.1",
+      "hashPath": "harfbuzzsharp.8.3.0.1.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/8.3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2o6U05LAmK+rwX7TvmJ2X0anXJG2hSE7kHVmCshhHy0tKfByJ5ykBacvhmmooHchlOwq15KBZeROGafCT8nN+g==",
+      "path": "harfbuzzsharp.nativeassets.macos/8.3.0.1",
+      "hashPath": "harfbuzzsharp.nativeassets.macos.8.3.0.1.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/8.3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ow0DtGEUjo65qhiI22of7qiVbN1xDFsZ5P5xJljRmGZ5WSxNy+1batLNJFGxahqhB1MTHYV8kAXf0GqC8WaevQ==",
+      "path": "harfbuzzsharp.nativeassets.win32/8.3.0.1",
+      "hashPath": "harfbuzzsharp.nativeassets.win32.8.3.0.1.nupkg.sha512"
+    },
+    "LiveChartsCore/2.0.0-rc5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1hEEvMndEP5urodx+Epu2lwvJr0ZG246FR7jMYtE9/snYwbUKoItq6a4cTzyeyFPi9fcBsjtgwAWA8uL/2s73g==",
+      "path": "livechartscore/2.0.0-rc5.4",
+      "hashPath": "livechartscore.2.0.0-rc5.4.nupkg.sha512"
+    },
+    "LiveChartsCore.Behaviours/2.0.0-rc5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cFpDKbNI9Kpj+txbSmZjAnAZwP3lFEDVFDYmyGd52KvH6CoLuHEwjfJ5ZGy9GAPsrwhUfdmRjkF37U+z+f9U+Q==",
+      "path": "livechartscore.behaviours/2.0.0-rc5.4",
+      "hashPath": "livechartscore.behaviours.2.0.0-rc5.4.nupkg.sha512"
+    },
+    "LiveChartsCore.SkiaSharpView/2.0.0-rc5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lpylapUJHvAagM4pmcwCvx3ObfL2FlITtI0u8LkKlLEnzhJYg17Tcxcgd6R/mItQlCdICG0PFDVNUDnZEwhFuw==",
+      "path": "livechartscore.skiasharpview/2.0.0-rc5.4",
+      "hashPath": "livechartscore.skiasharpview.2.0.0-rc5.4.nupkg.sha512"
+    },
+    "LiveChartsCore.SkiaSharpView.Maui/2.0.0-rc5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qVpKfdBb90jXVY7FtFF7vOBL6VYNtBG+eJn421bg+7jo+x+HiuT52tMJUhM7sfUVYXRQfP9hoxyFCMBwLvaOVA==",
+      "path": "livechartscore.skiasharpview.maui/2.0.0-rc5.4",
+      "hashPath": "livechartscore.skiasharpview.maui.2.0.0-rc5.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
+      "path": "microsoft.extensions.configuration/8.0.0",
+      "hashPath": "microsoft.extensions.configuration.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ==",
+      "path": "microsoft.extensions.configuration.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tvRkov9tAJ3xP51LCv3FJ2zINmv1P8Hi8lhhtcKGqM+ImiTCC84uOPEI4z8Cdq2C3o9e+Aa0Gw0rmrsJD77W+w==",
+      "path": "microsoft.extensions.logging/8.0.0",
+      "hashPath": "microsoft.extensions.logging.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JOVOfqpnqlVLUzINQ2fox8evY2SKLYJ3BV8QDe/Jyp21u1T7r45x/R/5QdteURMR5r01GxeJSBBUOCOyaNXA3g==",
+      "path": "microsoft.extensions.options/8.0.0",
+      "hashPath": "microsoft.extensions.options.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
+      "path": "microsoft.extensions.primitives/8.0.0",
+      "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Maui.Controls/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wUNQRAvzyhZjD5XLowTcU4OFQ6Tz2bdHz7ZRenKdChqtrxfSltiA84F/aN+M2BwmfVxuEp3zD2Y31paYFK8n1Q==",
+      "path": "microsoft.maui.controls/8.0.82",
+      "hashPath": "microsoft.maui.controls.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Controls.Build.Tasks/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FLtYThqc5tQ7TnNuInJzNsK+jtg2ecjqoOWFYCCWASz4WJn8tN60nyP0drS6wTBj8CJLdrDzr3gxkfJpSh4cng==",
+      "path": "microsoft.maui.controls.build.tasks/8.0.82",
+      "hashPath": "microsoft.maui.controls.build.tasks.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Controls.Core/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OA6LfWt6IIQFBXOJIIzef4FeH9kEd1GrN7OjalLqLlxmTrVUoVldAc9fp5e3NTzrLKr6DrvYdhOd+vazx9KvTw==",
+      "path": "microsoft.maui.controls.core/8.0.82",
+      "hashPath": "microsoft.maui.controls.core.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Controls.Xaml/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QFCiX2BOLursL7QXa1KVkUEUsFO6ccxQh7f8rZXMOgAjR1M01Q4YNa9uGJ8vDwfj03snEmIQGrhM/K1ohuBy0Q==",
+      "path": "microsoft.maui.controls.xaml/8.0.82",
+      "hashPath": "microsoft.maui.controls.xaml.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Core/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cuL7nSqN4HD+AMmgqKS5FW0nGSixRKt5yHCHYBPdcHJSzhGaBkhm3f3QXfus+FfFeKf8wpe24WT3OpakUxOZOQ==",
+      "path": "microsoft.maui.core/8.0.82",
+      "hashPath": "microsoft.maui.core.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Essentials/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rcg+49oW7px7OC4NO0AMFeI0R51kDflyj9V0bFIh3ehY/3kI1Pk9pvHPGt1eRtbiejDOa0VTZKt/tKYme+OXJQ==",
+      "path": "microsoft.maui.essentials/8.0.82",
+      "hashPath": "microsoft.maui.essentials.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Graphics/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l0H7YufzTp8On98mx9BzTp7RQPpGPJNJBJMatIHxtEsDCGX0HSYnsoz07v0+dJsOVkfXMVTQmmmOrDujVNhpYQ==",
+      "path": "microsoft.maui.graphics/8.0.82",
+      "hashPath": "microsoft.maui.graphics.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Resizetizer/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TlWHxNzHvOpILEP3W+8asTaLZAlkISIPFJHY5/ckD9NuHu1vAb2YNsIVkjRe5YxthJQShTbbRFtzhf4sHryp9g==",
+      "path": "microsoft.maui.resizetizer/8.0.82",
+      "hashPath": "microsoft.maui.resizetizer.8.0.82.nupkg.sha512"
+    },
+    "SkiaSharp/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DNDwbRjP+aMo27dV2h/uHCVTcWubWWxHnPLiePNyl24f4Pv43mQ8AQQeseOrKR+J3AOCEs6t0sUjo0aa3j3RWQ==",
+      "path": "skiasharp/3.116.1",
+      "hashPath": "skiasharp.3.116.1.nupkg.sha512"
+    },
+    "SkiaSharp.HarfBuzz/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ibDG1+quN86vBd9ztjDAC9wnvS1nRZ6ydTUOSod4NsRHWdLLGzWYn1IOF4Cg9iJh5cQHdpzhUZBQE0JMKznrow==",
+      "path": "skiasharp.harfbuzz/3.116.1",
+      "hashPath": "skiasharp.harfbuzz.3.116.1.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3KPvpKysDmEMt0NnAZPX5U6KFk0LmG/72/IjAIJemIksIZ0Tjs9pGpr3L+zboVCv1MLVoJLKl3nJDXUG6Jda6A==",
+      "path": "skiasharp.nativeassets.macos/3.116.1",
+      "hashPath": "skiasharp.nativeassets.macos.3.116.1.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dRQ75MCI8oz6zAs2Y1w6pq6ARs4MhdNG+gf3doOxOxdnueDXffQLGQIxON54GDoxc0WjKOoHMKBR4DhaduwwQw==",
+      "path": "skiasharp.nativeassets.win32/3.116.1",
+      "hashPath": "skiasharp.nativeassets.win32.3.116.1.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Maui.Controls/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cUEiU0+PY6PQXdvVGbTBCxZD9R85o25ZHULFZ+muXdEuDmXI/iDvXYgldfLD5R9S7wDArnDCMIoep3A8TcCDWw==",
+      "path": "skiasharp.views.maui.controls/3.116.1",
+      "hashPath": "skiasharp.views.maui.controls.3.116.1.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Maui.Core/3.116.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eNTI5VH2sNpnkOPKEefRWHXlN+v2bFD+yZ4jimNQeL05uart2PaULOd9piLrHmBn6QQZmScAvJ0w8prlQJCzpQ==",
+      "path": "skiasharp.views.maui.core/3.116.1",
+      "hashPath": "skiasharp.views.maui.core.3.116.1.nupkg.sha512"
+    }
+  }
+}

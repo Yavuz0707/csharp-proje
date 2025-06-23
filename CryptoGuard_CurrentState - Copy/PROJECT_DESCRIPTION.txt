@@ -1,0 +1,93 @@
+# CryptoGuard Proje Açıklaması
+
+## Proje Adı
+CryptoGuard
+
+## Uygulama Tipi
+Windows Masaüstü Uygulaması (.NET MAUI kullanarak)
+
+## Genel Amaç
+Kullanıcıların finansal yatırımlarını (özellikle kripto paraları) sesli komutlar aracılığıyla takip etmelerini sağlayan, gerçek zamanlı fiyat bilgileri, portföy yönetimi, fiyat alarmı ve haber güncellemeleri gibi özellikler sunan bir uygulamadır.
+
+## Temel Özellikler
+
+### 1. Gerçek Zamanlı Fiyat Takibi
+- **İşlev:** Popüler kripto paraların güncel fiyatlarını ve piyasa verilerini (piyasa değeri, 24 saatlik değişim vb.) gerçek zamanlı olarak CoinGecko API üzerinden çeker ve görüntüler.
+- **Teknoloji:** CoinGecko API, HttpClient, CoinGeckoService.
+
+### 2. Portföy Yönetimi
+- **İşlev:** Kullanıcıların sahip oldukları kripto paraları ve miktarlarını eklemelerine, düzenlemelerine ve silmelerine olanak tanır. Portföyün toplam değerini ve her bir yatırımın güncel değerini takip eder.
+- **Teknoloji:** Portfolio, PortfolioItem modelleri, PortfolioService, Repository Pattern, Entity Framework Core.
+
+### 3. Fiyat Alarmları
+- **İşlev:** Kullanıcıların belirledikleri kripto paralar için hedef fiyatlar belirlemelerine ve bu fiyatlara ulaşıldığında bildirim almalarını sağlar. Alarmların tetiklenme durumunu takip eder.
+- **Teknoloji:** PriceAlert modeli, PriceAlertService, Background Service (planlanıyor), Repository Pattern, Entity Framework Core.
+
+### 4. Sesli Komutlar
+- **İşlev:** Kullanıcıların uygulama içinde sesli komutlar kullanarak belirli bilgilere erişmelerini veya aksiyonları tetiklemelerini sağlar (örn. "Bitcoin fiyatını göster", "Portföyümü aç"). (Windows'a özel implementasyon ile başlandı.)
+- **Teknoloji:** System.Speech kütüphanesi (Windows için), VoiceRecognitionService.
+
+### 5. Haber Güncellemeleri (Planlanan)
+- **İşlev:** Kripto para dünyasındaki güncel haberleri ve gelişmeleri kullanıcılara sunar.
+- **Teknoloji:** Haber API entegrasyonu (planlanıyor), ilgili servis.
+
+## Kullanılan Teknolojiler
+- **Frontend:** .NET MAUI (XAML, C#)
+- **Mimari:** MVVM (Model-View-ViewModel) - Community Toolkit.Mvvm
+- **Veritabanı:** MSSQL Server
+- **ORM (Object-Relational Mapper):** Entity Framework Core
+- **API Entegrasyonu:** HttpClient
+- **Ses Tanıma:** System.Speech (Windows)
+- **Ek MAUI Bileşenleri:** Community Toolkit.Maui (Converters, Behaviors, vb.)
+- **Bağımlılık Yönetimi:** NuGet
+
+## Mimari Katmanları
+- **CryptoGuard.Core:** Temel iş mantığı modellerini (User, Coin, Portfolio, PriceAlert, PortfolioItem) ve arayüzleri (IRepository, IUserService, IPortfolioService, IPriceAlertService, ICoinGeckoService, IVoiceRecognitionService) içerir.
+- **CryptoGuard.Infrastructure:** Veri erişimi (DbContext, Repository implementasyonu), dış servis entegrasyonları (CoinGeckoService, VoiceRecognitionService) ve Entity Framework Core yapılandırmalarını barındırır.
+- **CryptoGuard.Services:** Uygulama seviyesi iş mantığı servislerinin implementasyonlarını (UserService, PortfolioService, PriceAlertService) içerir.
+- **CryptoGuard.MAUI:** Kullanıcı arayüzü (XAML sayfaları), ViewModel'ler ve .NET MAUI uygulamasının başlangıç noktasıdır.
+
+## Veritabanı Yapısı (Entity Framework Core Migrations)
+- Uygulama veritabanı işlemleri için Entity Framework Core Code-First yaklaşımını kullanır.
+- Modeller (User, Coin, Portfolio, PortfolioItem, PriceAlert) veritabanı tablolarına karşılık gelir.
+- İlişkiler (örn. User-Portfolio, Portfolio-PortfolioItem, PortfolioItem-Coin) ve kısıtlamalar (örn. Unique Index) DbContext içinde yapılandırılmıştır.
+- `InitialCreate` migrasyonu ile veritabanının ilk şeması oluşturulmuştur.
+
+## Mevcut Durum (Haziran 2024)
+- Temel proje yapısı ve katmanları oluşturuldu.
+- Temel modeller (`User`, `Coin`, `Portfolio`, `PortfolioItem`, `PriceAlert`) tanımlandı.
+- Veri erişim katmanı (`Repository<T>`) ve DbContext (`CryptoGuardDbContext`) kuruldu.
+- API servis arayüzleri ve implementasyonları oluşturuldu.
+- **Coin fiyat ve fiyat geçmişi verileri CoinGecko API ile çekiliyor.**
+- **Portföyde coin ekleme, coinleri listeleme ve coin kartına tıklayınca detay popup'ında fiyat grafiği gösterme (LiveCharts2 ile) çalışıyor.**
+- Bağımlılık Enjeksiyonu (DI) yapılandırması (`MauiProgram.cs`) yapıldı.
+- Veritabanı migrasyonu (`InitialCreate`) oluşturuldu ve uygulandı.
+- Giriş (`LoginPage`) ve Kayıt (`RegisterPage`) UI sayfaları ve ViewModel'leri oluşturuldu.
+- Uygulamanın başlangıç sayfası `LoginPage` olarak ayarlandı.
+- Karşılaşılan derleme, XAML ve API hataları adım adım çözüldü.
+- **Portföy ekranı modernleştirildi, coin kartlarında kar/zarar, güncel fiyat, logo ve diğer bilgiler gösteriliyor.**
+- **Coin detay popup'ında seçilen coin için son 30 günlük fiyat grafiği ve güncel fiyat bilgisi gösteriliyor.**
+- **Sesli komut altyapısı başlatıldı ve temel komutlar (örn. "Bitcoin fiyatını göster") çalışıyor.**
+- **Kullanıcı arayüzü modern ve kullanıcı dostu hale getirildi.**
+
+## Gelecek Adımlar & Geliştirme Fikirleri
+- **Portföy:**
+  - Coin silme, coin miktarı güncelleme, portföy geçmişi ve performans grafikleri.
+  - Portföyün toplam kar/zarar ve geçmiş değer grafiği.
+  - Farklı para birimlerinde (USD, EUR, TRY) toplam değer gösterimi.
+  - Portföy verilerini dışa aktar/aktar (CSV, JSON).
+- **Alarm ve Bildirimler:**
+  - Fiyat alarmı kurma ve bildirim desteği.
+  - Alarm geçmişi ve yönetimi.
+- **Kullanıcı Deneyimi:**
+  - Karanlık/açık tema desteği.
+  - Kullanıcı profili ve ayarları.
+  - Daha zengin ve animasyonlu grafikler.
+- **API ve Veri:**
+  - Coin eklerken CoinGecko id'sinin otomatik eşlenmesi veya seçilmesi.
+  - Coin haberleri ve piyasa gelişmeleri entegrasyonu.
+- **Sesli Komutlar:**
+  - Portföy yönetimi ve fiyat sorgulama için sesli komutların genişletilmesi.
+- **Genel:**
+  - Kapsamlı hata yönetimi ve kullanıcı geri bildirimlerinin işlenmesi.
+  - Uygulamanın test edilmesi ve performans optimizasyonu. 

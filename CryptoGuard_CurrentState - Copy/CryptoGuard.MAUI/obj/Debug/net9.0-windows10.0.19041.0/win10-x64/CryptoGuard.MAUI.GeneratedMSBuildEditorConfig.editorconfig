@@ -1,0 +1,210 @@
+is_global = true
+build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = true
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.RootNamespace = CryptoGuard.MAUI
+build_property.ProjectDir = c:\Users\sukru\OneDrive\Desktop\CryptoGuard_CurrentState - Copy\CryptoGuard.MAUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Converters.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Converters.xaml
+build_metadata.AdditionalFiles.TargetPath = Converters.xaml
+build_metadata.AdditionalFiles.RelativePath = Converters.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/AddCoinPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.AddCoinPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddCoinPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddCoinPopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/AIPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.AIPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AIPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AIPopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/AllCoinsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.AllCoinsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AllCoinsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AllCoinsPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AppShell.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/CoinDetailPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.CoinDetailPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CoinDetailPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CoinDetailPopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/CommentPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.CommentPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CommentPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CommentPopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/CryptoGuardAIPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.CryptoGuardAIPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CryptoGuardAIPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CryptoGuardAIPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/FeedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.FeedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FeedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FeedPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ForgotPasswordPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/HashtagPostsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.HashtagPostsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HashtagPostsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HashtagPostsPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/ImagePopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.ImagePopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ImagePopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ImagePopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/NewsDetailPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.NewsDetailPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NewsDetailPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NewsDetailPopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/NewsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.NewsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NewsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NewsPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/PortfolioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.PortfolioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PortfolioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PortfolioPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/QuotePopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.QuotePopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\QuotePopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\QuotePopup.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/ResetPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ResetPasswordPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/TransactionHistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.TransactionHistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionHistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionHistoryPage.xaml
+
+[c:/Users/sukru/OneDrive/Desktop/CryptoGuard_CurrentState - Copy/CryptoGuard.MAUI/Views/TrendsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoGuard.MAUI.Views.TrendsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TrendsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TrendsPage.xaml

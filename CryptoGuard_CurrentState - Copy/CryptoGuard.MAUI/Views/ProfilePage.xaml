@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="CryptoGuard.MAUI.Views.ProfilePage"
+             Title="Profil"
+             BackgroundColor="#18122B">
+    <ScrollView>
+        <VerticalStackLayout Padding="0,32,0,0" Spacing="24">
+            <!-- Profil Bilgileri -->
+            <HorizontalStackLayout Spacing="28" Padding="32,0,32,0" VerticalOptions="Start">
+                <!-- Gradient Border & Shadow -->
+                <Frame WidthRequest="120" HeightRequest="120" CornerRadius="60" Padding="0" HasShadow="True" BorderColor="#a78bfa" BackgroundColor="#232136" VerticalOptions="Start" IsClippedToBounds="True">
+                    <Image Source="{Binding UserProfilePhoto}" Aspect="AspectFill" WidthRequest="120" HeightRequest="120">
+                        <Image.Triggers>
+                            <DataTrigger TargetType="Image" Binding="{Binding UserProfilePhoto}" Value="">
+                                <Setter Property="Source" Value="profile_placeholder.png" />
+                            </DataTrigger>
+                        </Image.Triggers>
+                    </Image>
+                </Frame>
+                <VerticalStackLayout Spacing="10" VerticalOptions="Center" WidthRequest="320">
+                    <Label Text="{Binding Username}" FontSize="32" FontAttributes="Bold" TextColor="#cdd6f4"/>
+                    <Label Text="{Binding Biography}" FontSize="16" FontAttributes="Italic" TextColor="#b4befe"/>
+                    <BoxView HeightRequest="1" Color="#a78bfa" Margin="0,8,0,0"/>
+                </VerticalStackLayout>
+                <!-- Takipçi/Takip/Buton hizalı -->
+                <VerticalStackLayout VerticalOptions="Center" Spacing="8" WidthRequest="160">
+                    <HorizontalStackLayout Spacing="18" HorizontalOptions="Center">
+                        <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                            <Label Text="{Binding FollowersCount}" FontSize="20" FontAttributes="Bold" TextColor="#cdd6f4" HorizontalOptions="Center"/>
+                            <Label Text="Takipçi" FontSize="13" TextColor="#a6adc8" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                            <Label Text="{Binding FollowingCount}" FontSize="20" FontAttributes="Bold" TextColor="#cdd6f4" HorizontalOptions="Center"/>
+                            <Label Text="Takip" FontSize="13" TextColor="#a6adc8" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <StackLayout HorizontalOptions="Center" Margin="0,4,0,0">
+                        <Button Text="{Binding IsFollowing, Converter={StaticResource FollowButtonTextConverter}}"
+                                Command="{Binding FollowCommand}"
+                                IsVisible="{Binding IsFollowing, Converter={StaticResource InverseBoolConverter}}"
+                                FontSize="16" Padding="18,4" BackgroundColor="#7c3aed" TextColor="White" CornerRadius="18"/>
+                        <Button Text="Takipten Çık"
+                                Command="{Binding UnfollowCommand}"
+                                IsVisible="{Binding IsFollowing}"
+                                FontSize="16" Padding="18,4" BackgroundColor="#232136" TextColor="#f38ba8" CornerRadius="18"/>
+                    </StackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <!-- Portföy Özeti Kartı -->
+            <Frame BackgroundColor="#221a44" BorderColor="#a78bfa" CornerRadius="24" Padding="28" Margin="24,0,24,0" HasShadow="True">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Portföy Özeti" FontSize="24" FontAttributes="Bold" TextColor="#a78bfa" HorizontalOptions="Center"/>
+                    <Grid IsVisible="{Binding IsPortfolioVisible}" ColumnDefinitions="*,*,*" Padding="0,0,0,0" VerticalOptions="Start">
+                        <VerticalStackLayout Grid.Column="0" Spacing="10" HorizontalOptions="Center">
+                            <Label Text="Toplam Kar/Zarar" FontSize="15" TextColor="#b4befe" HorizontalOptions="Center"/>
+                            <Label Text="{Binding TotalProfit, StringFormat='{}{0:N2} ₺'}" FontSize="18" TextColor="#b4befe" HorizontalOptions="Center"/>
+                            <HorizontalStackLayout Spacing="6" HorizontalOptions="Center">
+                                <Label Text="{Binding TotalProfitPercent, StringFormat='{0:+0.00;-0.00;0.00}%'}" FontSize="26" FontAttributes="Bold" TextColor="{Binding TotalProfitPercent, Converter={StaticResource ProfitColorConverter}}"/>
+                                <Label Text="{Binding TotalProfitPercent, Converter={StaticResource ProfitIconConverter}}" FontSize="22" TextColor="{Binding TotalProfitPercent, Converter={StaticResource ProfitColorConverter}}"/>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" Spacing="10" HorizontalOptions="Center">
+                            <Label Text="Coin Dağılımı" FontSize="15" TextColor="#b4befe" HorizontalOptions="Center"/>
+                            <lvc:PieChart Series="{Binding PieSeries}" WidthRequest="180" HeightRequest="180" TooltipPosition="Hidden"/>
+                            <Label FontSize="12" TextColor="#a6adc8" HorizontalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="En büyük pay: "/>
+                                        <Span Text="{Binding BiggestCoinName}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2" Spacing="10" HorizontalOptions="Center">
+                            <Label Text="Portföy Değişimi" FontSize="15" TextColor="#b4befe" HorizontalOptions="Center"/>
+                            <lvc:CartesianChart Series="{Binding LineSeries}" YAxes="{Binding MainChartAxes}" WidthRequest="400" HeightRequest="220"/>
+                            <Label Text="Son 7 gün" FontSize="12" TextColor="#a6adc8" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                    <StackLayout IsVisible="{Binding IsPortfolioVisible, Converter={StaticResource InverseBoolConverter}}" Padding="0,32,0,32" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Label Text="Bu kullanıcının portföyü gizli." FontSize="18" TextColor="#b4befe" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Paylaşımlar -->
+            <Label Text="Paylaşımlar" FontSize="20" FontAttributes="Bold" TextColor="#cdd6f4" Margin="24,0,0,0"/>
+            <CollectionView x:Name="profileCollectionView" ItemsSource="{Binding UserPosts}" SelectionMode="None" Margin="24,0,24,16">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#232136" CornerRadius="22" Padding="18" Margin="0,0,0,24" HasShadow="True">
+                            <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="56,*,Auto">
+                                <Frame Grid.RowSpan="2" Grid.Row="0" Grid.Column="0" WidthRequest="44" HeightRequest="44" CornerRadius="22" Padding="0" HasShadow="False" BorderColor="#a78bfa" VerticalOptions="Start">
+                                    <Image Source="{Binding User.ProfilePhoto}" Aspect="AspectFill" WidthRequest="44" HeightRequest="44"/>
+                                </Frame>
+                                <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="2">
+                                    <Label Text="{Binding User.Username}" FontAttributes="Bold" FontSize="16" TextColor="#cdd6f4"/>
+                                    <Label Text="{Binding CreatedAt, StringFormat='{0:dd.MM.yyyy HH:mm}'}" FontSize="12" TextColor="#a6adc8"/>
+                                </VerticalStackLayout>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Content}" FontSize="17" TextColor="#b4befe" Margin="0,4,0,0"/>
+                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding CoinTag}" FontSize="14" TextColor="#7c3aed" IsVisible="{Binding CoinTag}" Margin="0,2,0,0"/>
+                                <!-- Beğen/Yorum ikonları -->
+                                <HorizontalStackLayout Grid.Row="3" Grid.Column="1" Spacing="18" Margin="0,8,0,0" VerticalOptions="Center">
+                                    <ImageButton Source="{Binding IsLiked, Converter={StaticResource LikeIconConverter}}"
+                                                 WidthRequest="28" HeightRequest="28" Margin="0,0,8,0"
+                                                 BackgroundColor="Transparent"
+                                                 Command="{Binding BindingContext.LikeCommand, Source={x:Reference profileCollectionView}}"
+                                                 CommandParameter="{Binding .}" />
+                                    <Label Text="{Binding LikeCount}" FontSize="14" TextColor="#b4befe" VerticalOptions="Center" />
+                                    <ImageButton Source="comment_icon.png"
+                                                 WidthRequest="28" HeightRequest="28"
+                                                 BackgroundColor="Transparent"
+                                                 Command="{Binding BindingContext.CommentCommand, Source={x:Reference profileCollectionView}}"
+                                                 CommandParameter="{Binding .}" />
+                                    <Label Text="{Binding CommentCount}" FontSize="14" TextColor="#b4befe" VerticalOptions="Center" />
+                                </HorizontalStackLayout>
+                                <!-- Sağ üstte üç nokta menüsü -->
+                                <Grid Grid.Row="0" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Start">
+                                    <ImageButton Source="more_icon.png" WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent" Padding="0"
+                                                 IsVisible="{Binding IsMine}"
+                                                 Clicked="OnPostMenuClicked" CommandParameter="{Binding .}"/>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!-- Yorumlar -->
+            <CollectionView ItemsSource="{Binding Comments}" Margin="16,0,0,0" IsVisible="{Binding Comments.Count, Converter={StaticResource GreaterThanZeroConverter}}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Content}" FontSize="13" TextColor="#a6adc8" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

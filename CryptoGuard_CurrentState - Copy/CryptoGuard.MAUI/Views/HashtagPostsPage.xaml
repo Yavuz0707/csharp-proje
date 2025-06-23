@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoGuard.MAUI.Views.HashtagPostsPage"
+             Title="Hashtag Gönderileri"
+             BackgroundColor="#181825">
+    <VerticalStackLayout>
+        <Label Text="{Binding Hashtag}" FontSize="28" FontAttributes="Bold" TextColor="#a78bfa" Margin="24,24,0,12"/>
+        <CollectionView ItemsSource="{Binding Posts}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#232136" CornerRadius="22" Padding="18" Margin="16,0,16,24" HasShadow="True">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="64,*,Auto">
+                            <Frame Grid.RowSpan="2" Grid.Row="0" Grid.Column="0" WidthRequest="48" HeightRequest="48" CornerRadius="24" Padding="0" HasShadow="True" BorderColor="#a78bfa" VerticalOptions="Start">
+                                <Image Source="{Binding User.ProfilePhoto}" Aspect="AspectFill" WidthRequest="48" HeightRequest="48"/>
+                            </Frame>
+                            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="2">
+                                <Label Text="{Binding User.Username}" FontAttributes="Bold" FontSize="17" TextColor="#cdd6f4"/>
+                                <Label Text="{Binding CreatedAt, StringFormat='{0:dd.MM.yyyy HH:mm}'}" FontSize="13" TextColor="#a6adc8"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Content}" FontSize="17" TextColor="#b4befe" Margin="0,4,0,0"/>
+                            <Image Grid.Row="3" Grid.Column="1" Source="{Binding ImagePath}" HeightRequest="180" Aspect="AspectFill" Margin="0,8,0,0" IsVisible="{Binding ImagePath, Converter={StaticResource NullToBoolConverter}}"/>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage> 

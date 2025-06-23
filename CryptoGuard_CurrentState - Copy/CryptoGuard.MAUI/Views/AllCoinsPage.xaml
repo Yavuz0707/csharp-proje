@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             xmlns:models="clr-namespace:CryptoGuard.Core.Models;assembly=CryptoGuard.Core"
+             xmlns:conv="clr-namespace:CryptoGuard.MAUI.Converters"
+             x:Class="CryptoGuard.MAUI.Views.AllCoinsPage"
+             x:DataType="viewmodels:AllCoinsViewModel"
+             Title="Tüm Coinler"
+             BackgroundColor="#181A20">
+    <ContentPage.Resources>
+        <conv:FavoriteIconConverter x:Key="FavoriteIconConverter" />
+    </ContentPage.Resources>
+    <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="0">
+        <!-- Başlık -->
+        <Label Text="Tüm Coinler" FontAttributes="Bold" FontSize="22" TextColor="#fff" Margin="16,16,16,0" Grid.Row="0"/>
+        <!-- Arama Kutusu -->
+        <SearchBar Placeholder="Coin ara..." Text="{Binding SearchText}" TextColor="#fff" PlaceholderColor="#b4befe" BackgroundColor="#23243a" Margin="16,8,16,8" HeightRequest="40" FontSize="16" Grid.Row="1"/>
+        <!-- Tablo Başlıkları -->
+        <Grid ColumnDefinitions="40,40,*,100,80,80,40" Padding="16,0,16,0" HeightRequest="32" Grid.Row="2">
+            <Label Text="#" TextColor="#a6adc8" FontAttributes="Bold"/>
+            <Label Text="" Grid.Column="1"/>
+            <Label Text="Name" Grid.Column="2" TextColor="#a6adc8" FontAttributes="Bold"/>
+            <Label Text="Price" Grid.Column="3" TextColor="#a6adc8" FontAttributes="Bold"/>
+            <Label Text="1h %" Grid.Column="4" TextColor="#a6adc8" FontAttributes="Bold"/>
+            <Label Text="24h %" Grid.Column="5" TextColor="#a6adc8" FontAttributes="Bold"/>
+            <Label Text="" Grid.Column="6"/>
+        </Grid>
+        <!-- Coinler Listesi -->
+        <CollectionView Grid.Row="3"
+                        ItemsSource="{Binding FilteredCoins}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnCoinSelected"
+                        VerticalOptions="FillAndExpand"
+                        BackgroundColor="Transparent">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Coin">
+                    <Frame BackgroundColor="#23243a" CornerRadius="12" Padding="0" Margin="8,2,8,2" HasShadow="False">
+                        <Grid ColumnDefinitions="40,40,*,100,80,80,40" HeightRequest="56" VerticalOptions="Center">
+                            <!-- Sıra -->
+                            <Label Text="{Binding Index}" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#a6adc8" FontSize="16"/>
+                            <!-- Coin İkonu -->
+                            <Image Source="{Binding ImageUrl}" Grid.Column="1" WidthRequest="32" HeightRequest="32" VerticalOptions="Center"/>
+                            <!-- Coin Adı ve Sembolü -->
+                            <VerticalStackLayout Grid.Column="2" Spacing="0" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" TextColor="#fff" FontAttributes="Bold" FontSize="16"/>
+                                <Label Text="{Binding Symbol}" TextColor="#b4befe" FontSize="13"/>
+                            </VerticalStackLayout>
+                            <!-- Fiyat -->
+                            <Label Text="{Binding CurrentPrice, StringFormat='$ {0:N2}'}" Grid.Column="3" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
+                            <!-- 1h % -->
+                            <Label Text="{Binding PriceChangePercentage1h, StringFormat='{0:+0.00%;-0.00%;0.00%}'}"
+                                   Grid.Column="4"
+                                   TextColor="#16c784"
+                                   FontSize="15" VerticalOptions="Center"/>
+                            <!-- 24h % -->
+                            <Label Text="{Binding PriceChangePercentage24h, StringFormat='{0:+0.00%;-0.00%;0.00%}'}"
+                                   Grid.Column="5"
+                                   TextColor="#16c784"
+                                   FontSize="15" VerticalOptions="Center"/>
+                            <!-- Favori Yıldızı (placeholder) -->
+                            <ImageButton Source="{Binding IsFavorite, Converter={StaticResource FavoriteIconConverter}}"
+                                         Command="{Binding ToggleFavoriteCommand}"
+                                         CommandParameter="{Binding .}"
+                                         Grid.Column="6" WidthRequest="28" HeightRequest="28" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage> 

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             x:Class="CryptoGuard.MAUI.Views.LoginPage"
+             x:DataType="viewmodels:LoginViewModel"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#1A1A1A">
+
+    <Grid RowDefinitions="Auto, *, Auto">
+        <VerticalStackLayout Grid.Row="1"
+                             Spacing="20"
+                             Padding="30"
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand">
+
+            <Image Source="new_cryptoguard_logo.png"
+                   HeightRequest="150"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20" />
+
+            <Label Text="Giriş Yap"
+                   TextColor="White"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,30" />
+
+            <Border StrokeShape="RoundRectangle 25"
+                    Stroke="#333333"
+                    Padding="0"
+                    BackgroundColor="#282828"
+                    HeightRequest="50">
+                <Entry Placeholder="Kullanıcı Adı"
+                       PlaceholderColor="#AAAAAA"
+                       TextColor="White"
+                       Text="{Binding Username}"
+                       VerticalOptions="Center"
+                       Margin="15,0"
+                       ReturnType="Next"/>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 25"
+                    Stroke="#333333"
+                    Padding="0"
+                    BackgroundColor="#282828"
+                    HeightRequest="50">
+                <Entry Placeholder="Şifre"
+                       PlaceholderColor="#AAAAAA"
+                       TextColor="White"
+                       Text="{Binding Password}"
+                       IsPassword="True"
+                       VerticalOptions="Center"
+                       Margin="15,0"
+                       ReturnType="Done"/>
+            </Border>
+
+            <Label Text="{Binding ErrorMessage}"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10" />
+
+            <Button Text="İleri"
+                    Command="{Binding LoginCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    BackgroundColor="#A020F0"
+                    TextColor="White"
+                    CornerRadius="25"
+                    HeightRequest="50"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,10" />
+
+            <Button Text="Şifreni mi unuttun?"
+                    Command="{Binding ForgotPasswordCommand}"
+                    BackgroundColor="Transparent"
+                    TextColor="#A020F0"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Padding="0" />
+
+        </VerticalStackLayout>
+
+        <Border Grid.Row="2"
+                StrokeShape="RoundRectangle 0,0,0,0"
+                Stroke="#333333"
+                StrokeThickness="1"
+                Padding="0"
+                BackgroundColor="#1A1A1A"
+                Margin="0,0,0,0">
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Padding="0,15">
+                <Label TextColor="White" FontSize="14">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Henüz bir hesabın yok mu? " />
+                            <Span Text="Kaydol"
+                                  TextColor="#A020F0"
+                                  FontAttributes="Bold">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Border>
+
+    </Grid>
+
+</ContentPage> 

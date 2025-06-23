@@ -1,0 +1,238 @@
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\c\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (3)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\CryptoGuard_CurrentState - Kopya3 - Kopya - Kopya (4) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (2)\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (7) - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\Fatih\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (9) - Kopya - Kopya - Kopya - Kopya\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje - Kopya (11) - Kopya - Kopya - Kopya - Kopya - Copy - Copy\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.deps.json
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Core.pdb
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\bin\Debug\net9.0\CryptoGuard.Infrastructure.pdb
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.AssemblyReference.cache
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfoInputs.cache
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.AssemblyInfo.cs
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.csproj.CoreCompileInputs.cache
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGu.60663387.Up2Date
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\refint\CryptoGuard.Services.dll
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\CryptoGuard.Services.pdb
+C:\Users\sukru\OneDrive\Desktop\diğer\proje\CryptoGuard_CurrentState\CryptoGuard.Services\obj\Debug\net9.0\ref\CryptoGuard.Services.dll

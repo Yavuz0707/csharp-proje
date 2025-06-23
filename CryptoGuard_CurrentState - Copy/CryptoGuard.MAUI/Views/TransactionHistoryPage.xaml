@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             xmlns:conv="clr-namespace:CryptoGuard.MAUI.Converters"
+             x:Class="CryptoGuard.MAUI.Views.TransactionHistoryPage"
+             Title="İşlem Geçmişi"
+             BackgroundColor="#181A20">
+    <ContentPage.BindingContext>
+        <vm:TransactionHistoryViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <conv:TransactionTypeToColorConverter x:Key="TransactionTypeToColorConverter" />
+        <conv:TransactionTypeToAmountColorConverter x:Key="TransactionTypeToAmountColorConverter" />
+    </ContentPage.Resources>
+    <VerticalStackLayout Padding="18,24,18,18" Spacing="18">
+        <Label Text="İşlem Geçmişi" FontSize="22" FontAttributes="Bold" TextColor="#b4befe" HorizontalOptions="Center"/>
+        <ScrollView Orientation="Both">
+            <Grid ColumnSpacing="12" RowSpacing="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <!-- Başlıklar -->
+                <Label Grid.Row="0" Grid.Column="0" Text="Zaman" FontAttributes="Bold" TextColor="#b4befe"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Sembol" FontAttributes="Bold" TextColor="#b4befe"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="İşlem" FontAttributes="Bold" TextColor="#b4befe"/>
+                <Label Grid.Row="0" Grid.Column="3" Text="Miktar" FontAttributes="Bold" TextColor="#b4befe"/>
+                <Label Grid.Row="0" Grid.Column="4" Text="Gerçekleşen Kar/Zarar" FontAttributes="Bold" TextColor="#b4befe"/>
+                <!-- Satırlar -->
+                <CollectionView Grid.Row="1" Grid.ColumnSpan="5" ItemsSource="{Binding Transactions}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnSpacing="12" RowSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="160"/>
+                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="110"/>
+                                    <ColumnDefinition Width="180"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding TransactionDate, StringFormat='{0:yyyy-MM-dd HH:mm:ss}'}" TextColor="#fff"/>
+                                <Label Grid.Column="1" Text="{Binding CoinSymbol}" TextColor="#fff"/>
+                                <Label Grid.Column="2" Text="{Binding IslemText}" TextColor="#fff"/>
+                                <Label Grid.Column="3" Text="{Binding Quantity, StringFormat='{0:N4}'}" 
+                                       TextColor="{Binding TransactionType, Converter={StaticResource TransactionTypeToAmountColorConverter}}"/>
+                                <Label Grid.Column="4" Text="{Binding RealizedProfitDisplay}" TextColor="#fff"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage> 

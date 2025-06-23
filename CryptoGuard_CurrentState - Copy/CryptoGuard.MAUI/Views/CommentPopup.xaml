@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoGuard.MAUI.Views.CommentPopup"
+             BackgroundColor="#1e1e2e"
+             Padding="0,40,0,0">
+    <VerticalStackLayout Spacing="18" Padding="24">
+        <Label Text="Yorumlar" FontSize="22" FontAttributes="Bold" TextColor="#cdd6f4"/>
+        <CollectionView x:Name="CommentsList" ItemsSource="{Binding Comments}" HeightRequest="260">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#232136" CornerRadius="14" Padding="10" Margin="0,0,0,10" HasShadow="True">
+                        <HorizontalStackLayout Spacing="12">
+                            <Frame WidthRequest="36" HeightRequest="36" CornerRadius="18" Padding="0" HasShadow="False" BorderColor="#a78bfa">
+                                <Image Source="{Binding User.ProfilePhoto}" Aspect="AspectFill" WidthRequest="36" HeightRequest="36">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.NavigateToUserProfileCommand, Source={x:Reference CommentsList}}" CommandParameter="{Binding User.Username}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Frame>
+                            <VerticalStackLayout>
+                                <Label Text="{Binding User.Username}" FontAttributes="Bold" FontSize="15" TextColor="#cdd6f4">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.NavigateToUserProfileCommand, Source={x:Reference CommentsList}}" CommandParameter="{Binding User.Username}" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Text="{Binding Content}" FontSize="14" TextColor="#b4befe"/>
+                                <Label Text="{Binding CreatedAt, StringFormat='{0:dd.MM.yyyy HH:mm}'}" FontSize="11" TextColor="#a6adc8"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <HorizontalStackLayout Spacing="10">
+            <Entry x:Name="NewCommentEntry" Placeholder="Yorum ekle..." Text="{Binding NewComment}" FontSize="15" BackgroundColor="#232136" TextColor="#cdd6f4" WidthRequest="220"/>
+            <Button Text="Gönder" Command="{Binding SendCommentCommand}" FontSize="15" BackgroundColor="#a78bfa" TextColor="White" CornerRadius="10"/>
+        </HorizontalStackLayout>
+        <Button Text="Kapat" Clicked="OnCloseClicked" BackgroundColor="#444" TextColor="#fff" CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage> 

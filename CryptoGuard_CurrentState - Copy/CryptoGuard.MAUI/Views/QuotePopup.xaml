@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="CryptoGuard.MAUI.Views.QuotePopup"
+               Size="700,380">
+    <Frame BackgroundColor="#18181b" CornerRadius="28" Padding="0" Margin="0"
+           HasShadow="True" VerticalOptions="Center" HorizontalOptions="Center"
+           WidthRequest="520" HeightRequest="360">
+        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="56,*" Padding="0">
+            <!-- Sağ üst: Kapatma X ikonu -->
+            <Image Source="close_icon.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="End" VerticalOptions="Start" Margin="0,16,16,0" Grid.Row="0" Grid.Column="1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding CancelCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+            <!-- Sol üst: Profil fotoğrafı -->
+            <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
+                   WidthRequest="40" HeightRequest="40" Padding="0" CornerRadius="20" BorderColor="#1d9bf0" BackgroundColor="Transparent" Margin="16,32,0,0" HasShadow="False"
+                   VerticalOptions="Start" HorizontalOptions="Center">
+                <Image Source="{Binding CurrentUserProfilePhoto}" WidthRequest="36" HeightRequest="36" Aspect="AspectFill"/>
+            </Frame>
+            <!-- Üst: 'Yorum ekle' label ve kutu -->
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="4" Margin="0,32,24,0">
+                <Label Text="Yorum ekle" FontSize="18" TextColor="#e7e9ea" FontAttributes="Bold"/>
+                <Frame CornerRadius="8" Padding="0" BackgroundColor="Transparent" HasShadow="False">
+                    <Editor Placeholder="Yorumunuzu yazın..." Text="{Binding QuoteText}" AutoSize="TextChanges"
+                            BackgroundColor="#232136" FontSize="14" TextColor="#cdd6f4" HeightRequest="40"/>
+                </Frame>
+                <!-- Seçilen resim önizlemesi -->
+                <Grid IsVisible="{Binding SelectedImagePath, Converter={StaticResource NullToBoolConverter}}" Margin="0,8,0,0" HeightRequest="80">
+                    <Image Source="{Binding SelectedImagePath}" HeightRequest="80" Aspect="AspectFill"/>
+                    <ImageButton Source="close_icon.png" WidthRequest="22" HeightRequest="22" BackgroundColor="#00000088" CornerRadius="11" HorizontalOptions="End" VerticalOptions="Start" Margin="0,4,4,0"
+                                 Command="{Binding RemoveImageCommand}"/>
+                </Grid>
+            </VerticalStackLayout>
+            <!-- Orta: Quoted post card -->
+            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#232136" BorderColor="#393950" CornerRadius="14" Padding="10" Margin="0,8,24,0" HasShadow="False" IsVisible="{Binding AlintilananPost}">
+                <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="28,*" >
+                    <Image Grid.Row="0" Grid.Column="0" Source="{Binding AlintilananPost.User.ProfilePhoto}" WidthRequest="20" HeightRequest="20" Aspect="AspectFill"/>
+                    <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="5" VerticalOptions="Start">
+                        <Label Text="{Binding AlintilananPost.User.Username}" FontAttributes="Bold" FontSize="12" TextColor="#e7e9ea"/>
+                        <Label Text="{Binding AlintilananPost.CreatedAt, StringFormat='· {0:HH:mm}'}" FontSize="10" TextColor="#71767b"/>
+                    </HorizontalStackLayout>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding AlintilananPost.Content}" FontSize="12" TextColor="#cdd6f4" Margin="0,2,0,0"/>
+                    <Image Grid.Row="2" Grid.Column="1" Source="{Binding AlintilananPost.ImagePath}" HeightRequest="60" Aspect="AspectFill" Margin="0,4,0,0" IsVisible="{Binding AlintilananPost.ImagePath, Converter={StaticResource NullToBoolConverter}}"/>
+                </Grid>
+            </Frame>
+            <!-- Alt: Icon bar ve Paylaş butonu -->
+            <Grid Grid.Row="2" Grid.Column="1" ColumnDefinitions="*,auto" Padding="0,14,0,18" VerticalOptions="End">
+                <HorizontalStackLayout Spacing="14" VerticalOptions="Center">
+                    <ImageButton Source="image_icon.png" Command="{Binding SelectImageCommand}" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20"/>
+                    <ImageButton Source="emoji_icon.png" Command="{Binding ShowEmojiPickerCommand}" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20"/>
+                </HorizontalStackLayout>
+                <Button Grid.Column="1" Text="Paylaş" Command="{Binding ShareQuoteCommand}"
+                        BackgroundColor="#1d9bf0" TextColor="#fff" CornerRadius="18"
+                        FontSize="15" Padding="24,6" Margin="0,0,12,0" VerticalOptions="Center" WidthRequest="90" HeightRequest="36"/>
+            </Grid>
+        </Grid>
+    </Frame>
+</toolkit:Popup> 

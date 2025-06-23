@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CryptoGuard.MAUI.ViewModels"
+             xmlns:models="clr-namespace:CryptoGuard.Core.Models;assembly=CryptoGuard.Core"
+             xmlns:conv="clr-namespace:CryptoGuard.MAUI.Converters"
+             x:Class="CryptoGuard.MAUI.Views.MainPage"
+             x:DataType="viewmodels:MainViewModel"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <conv:FavoriteIconConverter x:Key="FavoriteIconConverter" />
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,Auto,*,Auto">
+        <!-- Profil ve Hoşgeldin -->
+        <HorizontalStackLayout Grid.Row="0" Spacing="16" VerticalOptions="Start" Margin="0,0,0,10">
+            <Frame WidthRequest="96" HeightRequest="96" CornerRadius="48" BorderColor="{DynamicResource AccentColor}" Padding="0" HasShadow="False" VerticalOptions="Center">
+                <Image Source="{Binding ProfilePhoto, TargetNullValue='user.png'}" Aspect="AspectFill" WidthRequest="96" HeightRequest="96"/>
+            </Frame>
+            <VerticalStackLayout Spacing="4" VerticalOptions="Center">
+                <Label Text="{Binding Username, StringFormat='Hoşgeldiniz, {0}'}" FontSize="20" FontAttributes="Bold" TextColor="{DynamicResource TextColor}"/>
+                <Label Text="{Binding PortfolioTotalValue, StringFormat='Toplam: {0:N2} ₺'}" FontSize="14" TextColor="{DynamicResource SecondaryTextColor}"/>
+                <HorizontalStackLayout>
+                    <Label Text="Değişim: " FontSize="14" TextColor="{DynamicResource SecondaryTextColor}"/>
+                    <Label Text="{Binding PortfolioChangePercent, StringFormat='%{0:F2}'}" FontSize="14" TextColor="{Binding PortfolioChangeColor}"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <!-- Favori Coinler -->
+        <VerticalStackLayout Grid.Row="1" Spacing="10">
+            <Label Text="Favori Coinler" FontAttributes="Bold" FontSize="18" />
+            <CollectionView ItemsSource="{Binding FavoriteCoins}" HeightRequest="120" SelectionMode="None">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Coin">
+                        <Frame Padding="10" Margin="5" BackgroundColor="#232136" CornerRadius="14" BorderColor="#FFD700" HasShadow="True">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White" FontSize="16" />
+                                    <ImageButton Source="{Binding IsFavorite, Converter={StaticResource FavoriteIconConverter}}"
+                                                 Command="{Binding ToggleFavoriteCommand}"
+                                                 CommandParameter="{Binding .}"
+                                                 WidthRequest="28" HeightRequest="28" BackgroundColor="Transparent"/>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding Symbol}" FontSize="12" TextColor="#b4befe" />
+                                <Label Text="{Binding CurrentPrice, StringFormat='${0:F2}'}" TextColor="#FFD700" FontAttributes="Bold" FontSize="16" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+        <!-- Top Coins -->
+        <VerticalStackLayout Grid.Row="2" Spacing="10">
+            <Label Text="Top Coins" FontAttributes="Bold" FontSize="18" />
+            <CollectionView ItemsSource="{Binding TopCoins}" HeightRequest="120" SelectionMode="None">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Coin">
+                        <Frame Padding="10" Margin="5" BackgroundColor="#232136" CornerRadius="14" BorderColor="#7c3aed" HasShadow="True">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White" FontSize="16" />
+                                <Label Text="{Binding Symbol}" FontSize="12" TextColor="#b8b8ff" />
+                                <Label Text="{Binding CurrentPrice, StringFormat='${0:F2}'}" TextColor="#a78bfa" FontAttributes="Bold" FontSize="16" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+        <!-- Portföy ve Fiyat Alarmları gibi diğer alanlar -->
+        <VerticalStackLayout Grid.Row="3" Spacing="10">
+            <Label Text="Portföy" FontAttributes="Bold" FontSize="18" />
+            <CollectionView ItemsSource="{Binding UserPortfolios}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Portfolio">
+                        <Frame Padding="10" Margin="5" BackgroundColor="#232136" CornerRadius="14" BorderColor="#7c3aed" HasShadow="True">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White" FontSize="16" />
+                                <Label Text="{Binding TotalValue, StringFormat='${0:F2}'}" TextColor="#a78bfa" FontAttributes="Bold" FontSize="16" />
+                                <Label Text="{Binding LastUpdated, StringFormat='G'}" FontSize="12" TextColor="#b8b8ff" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label Text="Fiyat Alarmları" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" />
+            <CollectionView ItemsSource="{Binding UserAlerts}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:PriceAlert">
+                        <Frame Padding="10" Margin="5" BackgroundColor="#232136" CornerRadius="14" BorderColor="#7c3aed" HasShadow="True">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Coin.Name}" FontAttributes="Bold" TextColor="White" FontSize="16" />
+                                <Label Text="{Binding TargetPrice, StringFormat='${0:F2}'}" TextColor="#a78bfa" FontAttributes="Bold" FontSize="16" />
+                                <Label Text="{Binding IsTriggered, StringFormat='Tetiklendi: {0}'}" TextColor="#b8b8ff" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="Tüm Coinler" Command="{Binding GoToAllCoinsCommand}" BackgroundColor="#7c3aed" TextColor="White" CornerRadius="10" Margin="0,0,0,10" />
+        </VerticalStackLayout>
+
+        <ActivityIndicator Grid.Row="4"
+                          IsRunning="{Binding IsBusy}"
+                          IsVisible="{Binding IsBusy}"
+                          HorizontalOptions="Center" />
+
+        <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding ErrorMessage, Converter={StaticResource IsStringNullOrEmptyConverter}}" />
+
+        <!-- Sesli Asistan Overlay (alt-orta) -->
+        <Grid
+            Grid.RowSpan="5"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,0,0,30"
+            IsVisible="{Binding VoiceAssistant.IsListening}">
+            <Image Source="siri_logo.png" 
+                   WidthRequest="90" 
+                   HeightRequest="90" 
+                   Opacity="0.85">
+                <Image.Triggers>
+                    <DataTrigger TargetType="Image"
+                                Binding="{Binding VoiceAssistant.IsListening}"
+                                Value="True">
+                        <Setter Property="Rotation" Value="360"/>
+                        <Setter Property="Scale" Value="1.1"/>
+                    </DataTrigger>
+                </Image.Triggers>
+            </Image>
+            <Label Text="{Binding VoiceAssistant.AssistantStatus}" 
+                   TextColor="#7c3aed" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="End" 
+                   Margin="0,100,0,0"/>
+        </Grid>
+    </Grid>
+</ContentPage> 
